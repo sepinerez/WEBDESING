@@ -1,3 +1,17 @@
+@font-face{
+    font-family: "titilium";
+    src: url("fonts/titilium.ttf")
+}
+
+@font-face{
+    font-family: "finger";
+    src: url("fonts/finger.ttf");
+}
+@font-face{
+    font-family: "yanone";
+    src: url("fonts/yanone.ttf");
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -5,22 +19,9 @@
 }
 
 body {
-    font-family: 'open sans';
-}
-
-.contenedor {
-    padding: 60px 0;
-    width: 90%;
-    max-width: 1000px;
-    margin: auto;
-    overflow: hidden;
-}
-
-.titulo {
-    color: #642a73;
-    font-size: 30px;
-    text-align: center;
-    margin-bottom: 60px;
+    background-color:white;
+    padding:0;margin:0;
+    overflow: auto;
 }
 
 /* Header */
@@ -42,30 +43,35 @@ header {
 header, nav {
     width: 100%;
     height: auto;
+    
 }
 
-header, nav ul{
+header, nav ul {
     color: white;
 }
 
-a{
-    font-size: 90%;
+.nav-link {
+    font-family: "yanone";
+    font-size: 190%;
+    color: #4d0686 !important;
     text-decoration: none;
-    margin: 1px 1px 1px 1px;
+    margin: 0px 5px 4px 5px;
     background: rgb(255, 255, 255);
     border-radius: 9px;
-    box-shadow: 0px 5px 0px  #4d0686;
+    width: 170PX;
+    text-align: center;
+    box-shadow: 0px 7px 0px #4d0686;
 }
 
-a:hover{
+.nav-link:hover{
     box-shadow: 0px 2px 0px #4d0686;
-    background: rgb(221, 186, 224);
-    color: #000;
-    font-size: 110%;
+    background: rgb(77, 6, 134) ;
+    color: white !important;
+    font-size: 200%;
 }
 
-a:active{
-    box-shadow: none;
+.nav-link:active{
+    box-shadow: #4d0686;
 }
 
 .navbar-toggler{
@@ -77,26 +83,26 @@ a:active{
 }
 
 nav{
-    text-align: right;
+    text-align: center;
     margin: 10px;
     padding: 30px 50px 0 0;
     
 }
 
-nav > a{
+nav > .nav-link{
     color:#fff;
     font-weight: 300;
     text-decoration: none;
     margin-right: 10px;
 }
 
-nav > a:hover{
+nav > .nav-link:hover{
     text-decoration: underline;
 }
 
 header .textos-header{
     display: flex;
-    height: 300px;
+    height: 350px;
     width: 100%;
     align-items: center;
     justify-content: center;
@@ -105,12 +111,15 @@ header .textos-header{
 }
 
 .textos-header h1{
-    font-size: 50px;
+    padding-top: 20px;
+    font-family: "titilium";
+    font-size: 85px;
     color:#fff;
 }
 
 .textos-header h2{
-    font-size: 30px;
+    font-family: "yanone";
+    font-size: 50px;
     font-weight: 300;
     color:#fff;
 }
@@ -121,62 +130,136 @@ header .textos-header{
     width: 100%;
 }
 
-/* About us */
 
-main .sobre-nosotros{
-    padding: 20px 0 50px 0;
+/* Diseño */
+
+@keyframes textclip {
+	to {
+		background-position: 200% center;
+	}
 }
-.contenedor-sobre-nosotros{
+
+a{
+    text-decoration: none;
+    color: #4d0686;
+    border-bottom: 2px solid #4d0686;
+    border-radius: 15px;
+ }
+
+a:hover{
+    text-decoration: none;
+    border-bottom: 2px solid #4d0686;
+    border-radius: 15px;
+    color: #4d0686;
+}
+
+main{
+    position: static;
+}
+
+.contenedor {
+    display: inline-block;
+    padding: 5px 0;
+    width: 100%;
+    max-width: inherit;
+    margin: auto;
+    overflow: hidden;
+}
+
+.titulo-pag{
+    padding: 30px;
+    font-size: 100px;
+    text-align: center !important;
+    margin-bottom: 5px;
+    width: inherit;
+
+    font-family: "finger";
+    text-transform: uppercase;
+    font-weight: 700;
+    background: linear-gradient(to right, #4d0686 10%, #fff 50%, #5bdaff 60%);
+    background-size: auto auto;
+    background-clip: border-box;
+    background-size: 200% auto;
+    color: #fff;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: textclip 5.5s linear infinite reverse;
+    display: inline-block;
+}
+
+.contenedor h3{
+    color: #4d0686;
+    font-family: "yanone";
+    font-size: 60px;
+    text-align: center;
+    margin: 30px;
+}
+
+.cards{
+    margin-bottom: 10px;
+    position: static;
     display: flex;
     justify-content: space-evenly;
 }
-/*
-.imagen-about-us{
-    width: 40%;
-}
-*/
-.sobre-nosotros .contenido-textos{
-    width: 30%;
-}
 
-.contenido-textos h3{
-    margin-bottom: 15px;
-}
-
-.contenido-textos h3 span{
+.cards .card{
+    padding: 1%;
+    margin: 1%;
     background: #4d0686;
+    position: inherit;
+    display: flex;
+    width: 35%;
+    height: 70%;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 5px;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.6);
+}
+
+
+.cards .card > .contenido-texto-card{
+    
+    width: 70%;
     color: #fff;
-    border-radius: 50%;
-    display: inline-block;
-    text-align: center;
-    width: 30px;
-    height: 30px;
-    padding: 2px;
-    box-shadow: 0 0 6px 0 rgba(0, 0, 0, .5);
-    margin-right: 5px;
+    padding: 1, 1, 1, 1;
 }
 
-.contenido-textos p{
-    padding: 0px 0px 30px 15px;
+.cards .card > .contenido-texto-card p{
     font-weight: 300;
-    text-align: justify;
+    padding-top: 5px;
 }
 
-/* Galeria */
 
+.imagen-about-us{
+    width: 100%;
+    height: auto;
+    display: inline-block;
+    left: 0px;
+}
 
-.portafolio{
-    background: #f2f2f2;
+/* Utilizamos*/
+
+.titulo{
+    font-family: "yanone";
+    font-size: 500%;
+    text-align: center;
+    color: #4d0686;
+    margin: 45px 0px;
 }
 
 .galeria-port{
-    display: flex;
+    display: inline-flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
+    width: inherit;
+    position: relative;
 }
 
 .imagen-port{
     width: 24%;
+    border-radius: 13%;
+    padding: 0%;
     margin-bottom: 10px;
     overflow: hidden;
     position: relative;
@@ -185,29 +268,53 @@ main .sobre-nosotros{
 }
 
 .imagen-port > img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    display: block;
+    width: 90%;
+    height: 90%;
+    margin: 19px 0px 0px 16px;
+    border-radius: 13%;
+    position: inherit;
 }
 
 .hover-galeria{
+    border-radius: 13%;
     position: absolute;
     width: 100%;
     height: 100%;
     top: 0;
     transform: scale(0);
     background: hsla(273,91%,27%, 0.7);
-    transition: transform .5s;
+    transition: transform 1.5s;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
 }
 
-.hover-galeria img{
-    width: 50px;
+.hover-galeria p{
+    font-family: "yanone";
+    font-size: 250%;
 }
+
+/* Galeria */
+
+.clientes-contenedor{
+    display: inline-block;
+    padding: 5px 0;
+    width: 100%;
+    max-width: inherit;
+    margin: auto;
+    overflow: hidden;
+}
+
+
+.portafolio{
+    display: inline-block;
+    width: 100%;
+    height: auto;
+    background: #f2f2f2;
+
+}
+
 
 .hover-galeria p{
     color: #fff;
@@ -220,16 +327,20 @@ main .sobre-nosotros{
 /* Clients */
 
 .cards{
+    position: static;
     display: flex;
     justify-content: space-evenly;
+    margin: 15px;
 }
 
 .cards .card{
-    padding: 2%;
+    padding: 1%;
+    font-family: "yanone";
+    margin: 1%;
     background: #4d0686;
     display: flex;
-    width: 40%;
-    height: 60%;
+    width: 35%;
+    height: 70%;
     align-items: center;
     justify-content: space-evenly;
     border-radius: 5px;
@@ -256,8 +367,119 @@ main .sobre-nosotros{
     padding-top: 5px;
 }
 
-/*  Our team */
 
+.cards{
+    position: static;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.card1{
+    padding: 1%;
+    margin: 1%;
+    font-family: "yanone";
+    background: #4d0686;
+    position: inherit;
+    display: flex;
+    width: 35%;
+    height: 70%;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 5px;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.6);
+}
+
+
+.card1 > .contenido-texto-card{
+    text-align: center;
+    width: 70%;
+    color: #fff;
+    padding: 1, 1, 1, 1;
+}
+
+.card1 > .contenido-texto-card p{
+    font-weight: 300;
+    padding-top: 5px;
+}
+
+.precios{
+    display: inline-flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    width: 100%;
+    height: auto;
+}
+
+
+.titulo-precio{
+    padding: 0px 0px 0px 0px;
+    width: 25%;
+    border-radius: 15px;
+    position: initial;
+    margin: 3%;
+    font-family: "yanone";
+    font-size: 50px;
+    text-align: center;
+    cursor: pointer;
+    height: 50%;
+    justify-content: space-evenly;
+    
+}
+
+.titulo-precio h2{
+    font-size: 170%;
+    color: #4d0686 !important;
+    text-decoration: none;
+    margin: 0px;
+    background: rgb(255, 255, 255);
+    border-radius: 9px;
+    width: 100%;
+    text-align: center;
+}
+
+
+.titulo-precio h3{
+    font-size: 100%;
+    color: #4d0686 !important;
+    text-decoration: none;
+    margin: 0px;
+    background: rgb(255, 255, 255);
+    border-radius: 9px;
+    width: 100%;
+    text-align: center;
+    box-shadow: 0px 7px 0px #4d0686;
+}
+
+.titulo-precio h2:hover{
+    box-shadow: 0px 2px 0px #4d0686;
+    background: rgb(77, 6, 134) ;
+    color: white !important;
+    font-size: 180%;
+}
+
+
+.titulo-precio h3:hover{
+    box-shadow: 0px 2px 0px #4d0686;
+    background: rgb(77, 6, 134) ;
+    color: white !important;
+    font-size: 110%;
+}
+
+.contenido-precio{
+    margin: inherit;
+    text-align: center;
+    border-radius: 9px;
+    box-shadow: 0px 7px 0px #4d0686;
+}
+
+.contenido-precio li{
+    width: 100%;
+    font-size: 60%;
+    overflow: hidden;
+    list-style: none;
+    color: #4d0686;
+}
+/*  Our team */
 .about-services{
     background: #f2f2f2;
     padding-bottom: 30px;
@@ -288,11 +510,96 @@ main .sobre-nosotros{
     text-align: justify;
 }
 
+
+/*wave animation */
+
+.inner-header {
+    height: 0vh;
+    width: 100%;
+    margin: -40px;
+    padding: 0;
+  }
+  .flex {
+    /*Flexbox for containers*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .waves {
+    position: relative;
+    width: 100%;
+    height: 15vh;
+    margin-bottom: -7px;
+    /*Fix for safari gap*/
+    min-height: 100px;
+    max-height: 150px;
+  }
+  .content {
+    position: relative;
+    height: 20vh;
+    text-align: center;
+    background-color: white;
+  }
+  /* Animation */
+  .parallax>use {
+    animation: move-forever 25s cubic-bezier(.55, .5, .45, .5) infinite;
+  }
+  .parallax>use:nth-child(1) {
+    animation-delay: -2s;
+    animation-duration: 7s;
+  }
+  .parallax>use:nth-child(2) {
+    animation-delay: -3s;
+    animation-duration: 10s;
+  }
+  .parallax>use:nth-child(3) {
+    animation-delay: -4s;
+    animation-duration: 13s;
+  }
+  .parallax>use:nth-child(4) {
+    animation-delay: -5s;
+    animation-duration: 20s;
+  }
+  @keyframes move-forever {
+    0% {
+      transform: translate3d(-90px, 0, 0);
+    }
+    100% {
+      transform: translate3d(85px, 0, 0);
+    }
+  }
+  /*Shrinking for mobile*/
+  @media (max-width: 768px) {
+    .waves {
+      height: 40px;
+      min-height: 40px;
+    }
+    .content {
+      height: 30vh;
+    }
+    h1 {
+      font-size: 24px;
+    }
+  }
+
+
+
+
+
+
+/**/
+
+
 /* footer */
 
-footer{
-    background: #414141;
-    padding: 60px 0 30px 0;
+footer{    
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, hsla(281, 50%, 34%, 0.459), hsla(273, 53%, 46%, 0.864));
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, hsla(236, 15%, 39%, 0.459), hsla(256, 25%, 40%, 0.864));
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    padding: 40px 0 0 0;
     margin: auto;
     overflow: hidden;
 }
@@ -303,7 +610,8 @@ footer{
     justify-content: space-evenly;
     margin: auto;
     padding-bottom: 50px;
-    border-bottom: 1px solid #ccc;
+    border-radius: 30px;
+    border-bottom: 2px solid #4d0686;
 }
 
 .content-foo{
@@ -312,25 +620,95 @@ footer{
 
 .content-foo h4{
     color: #fff;
-    border-bottom: 3px solid #af20d3;
+    font-size: 40px;
+    font-family: "yanone";
+    border-radius: 15px;
+    border-bottom: 3px solid #4d0686;
     padding-bottom: 5px;
     margin-bottom: 10px;
 }
 
 .content-foo p{
-    color: #ccc;
+    color: #4d0686;
+    font-family: "yanone";
+    font-size: 30px;
 }
 
 .titulo-final{
     text-align: center;
-    font-size: 24px;
+    font-family: "finger";
+    font-size: 50px;
     margin: 20px 0 0 0;
-    color: #9e9797;
+    color: #4d0686;
 }
+
+
+.enrutamiento a{
+    padding: 0px;
+    margin: 0px;
+}
+
+
+.btn-floating{
+    margin-left: 2%;
+    margin-top: 41%;
+    font-size: 170%;
+    position: fixed;
+    background: #4d0686;
+    border-radius: 50%;
+    text-align: left;
+
+   
+}
+
+
+
+.btn-floating:hover{
+    font-size: 200%;
+    background: #4d0686;
+    border-radius: 50%;
+}
+
+.fa-whatsapp:before{
+    color: white;
+    font-size: 200%
+}
+
+
 
 @media screen and (max-width:900px){
     header{
         background-position: center;
+    }
+
+    .btn-floating{
+        margin-top: 2%;
+        margin-left: 90%;
+        font-size: 100%;
+        position: fixed;
+        background: #4d0686;
+        border-radius: 50%;
+        float: left;
+    }
+    
+    .btn-floating:hover{
+        font-size: 140%;
+        background: #4d0686;
+        border-radius: 50%;
+    }
+
+    .navbar-toggler{
+        display: flex;
+    }
+
+    .textos-header h1{
+        font-size: 50px;
+    }
+
+    .titulo-pag{
+        font-size: 440%;
+        margin: 0px;
+        padding: 0px;
     }
 
     .contenedor-sobre-nosotros{
@@ -344,15 +722,20 @@ footer{
     }
 
     .imagen-about-us{
-        width: 90%;
+        width: 100%;
     }
 
     /* Galeria */
 
     .imagen-port{
+        height: 300px;
         width: 44%;
     }
+    /*Precios*/
 
+    .titulo-precio{
+        width: 90%;
+    }
     /* Clientes */
 
     .cards{
@@ -364,6 +747,12 @@ footer{
     .cards .card{
         width: 90%;
     }
+
+    .cards .card1{
+        margin: 5%;
+        width: 90%;
+    }
+
 
     .cards .card:first-child{
         margin-bottom: 30px;
@@ -394,6 +783,7 @@ footer{
     nav{
         text-align: center;
         padding: 30px 0 0 0;
+        display: flex;
     }
 
     nav > a{
@@ -401,7 +791,7 @@ footer{
     }
 
     .textos-header h1{
-        font-size: 35px;
+        font-size: 55px;
     }
 
     .textos-header h2{
@@ -409,6 +799,11 @@ footer{
     }
 
     /* ABOUT US */
+    
+    .btn-floating{
+        margin-top: 2%;
+        margin-left: 80%;
+    }
 
     .imagen-about-us{
         margin-bottom: 60px;
@@ -428,7 +823,7 @@ footer{
     /* Clients */
 
     .cards .card{
-        height: 50px;
+        height: auto;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -457,7 +852,8 @@ footer{
 
     .content-foo p{
         color: #ccc;
-        border-bottom: 1px solid #f2f2f2;
+        border-radius: 15px;
+        border-bottom: 2px solid #4d0686;
         padding-bottom: 20px;
     }
 
