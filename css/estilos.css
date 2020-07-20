@@ -21,7 +21,30 @@
 body {
     background-color:white;
     padding:0;margin:0;
+<<<<<<< HEAD
     overflow: auto;
+=======
+    overflow:hidden;
+}
+
+body {
+    font-family: 'open sans';
+}
+
+.contenedor {
+    padding: 60px 0;
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    overflow: hidden;
+}
+
+.titulo {
+    color: #642a73;
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 60px;
+>>>>>>> 7e536e59af607fb1151fff19844d721363b0e284
 }
 
 /* Header */
