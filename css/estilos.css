@@ -677,29 +677,50 @@ footer{
 
 .btn-floating{
     margin-left: 2%;
-    margin-top: 41%;
+    margin-top: 8%;
     font-size: 170%;
     position: fixed;
-    background: #4d0686;
-    border-radius: 50%;
     text-align: left;
+    border: none;
+    border-radius: 24%;
+    background: green;
 
    
 }
 
-
-
 .btn-floating:hover{
-    font-size: 200%;
-    background: #4d0686;
-    border-radius: 50%;
+    font-size: 190%;
+    border: none;
+    border-radius: 24%;
+    background: green;
 }
 
 .fa-whatsapp:before{
-    color: white;
+    color:white;
     font-size: 200%
 }
 
+@media screen and (max-width:1024px){
+    .btn-floating{
+        margin-left: 2.5%;
+        margin-top: 6%;
+        font-size: 100%;
+        position: fixed;
+        text-align: left;
+        border: none;
+        border-radius: 24%;
+        background: green;
+    
+       
+    }
+    
+    .btn-floating:hover{
+        font-size: 110%;
+        border: none;
+        border-radius: 24%;
+        background: green;
+    }
+}
 
 
 @media screen and (max-width:900px){
@@ -708,20 +729,25 @@ footer{
     }
 
     .btn-floating{
-        margin-top: 2%;
-        margin-left: 90%;
+        margin-left: 3%;
+        margin-top: 8%;
         font-size: 100%;
         position: fixed;
-        background: #4d0686;
-        border-radius: 50%;
-        float: left;
+        text-align: left;
+        border: none;
+        border-radius: 24%;
+        background: green;
+    
+       
     }
     
     .btn-floating:hover{
-        font-size: 140%;
-        background: #4d0686;
-        border-radius: 50%;
+        font-size: 110%;
+        border: none;
+        border-radius: 24%;
+        background: green;
     }
+    
 
     .navbar-toggler{
         display: flex;
@@ -827,9 +853,25 @@ footer{
     /* ABOUT US */
     
     .btn-floating{
-        margin-top: 2%;
-        margin-left: 80%;
+        margin-left: 6%;
+        margin-top: 15%;
+        font-size: 100%;
+        position: fixed;
+        text-align: left;
+        border: none;
+        border-radius: 24%;
+        background: green;
+    
+       
     }
+    
+    .btn-floating:hover{
+        font-size: 110%;
+        border: none;
+        border-radius: 24%;
+        background: green;
+    }
+    
 
     .imagen-about-us{
         margin-bottom: 60px;
