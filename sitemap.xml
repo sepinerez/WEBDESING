@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+
+<url>
+  <loc>https://programadordisenadorweb.com/</loc>
+  <lastmod>2021-03-22T21:54:46+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://programadordisenadorweb.com/index.html</loc>
+  <lastmod>2021-03-22T21:54:46+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://programadordisenadorweb.com/seo.html</loc>
+  <lastmod>2021-03-17T20:24:46+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://programadordisenadorweb.com/precios.html</loc>
+  <lastmod>2021-03-17T20:24:28+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://programadordisenadorweb.com/dominio.html</loc>
+  <lastmod>2021-03-17T20:24:07+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://programadordisenadorweb.com/hosting.html</loc>
+  <lastmod>2021-03-17T20:23:52+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://programadordisenadorweb.com/dise%C3%B1o.html</loc>
+  <lastmod>2021-03-17T20:24:16+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://programadordisenadorweb.com/nosotros.html</loc>
+  <lastmod>2021-03-17T20:24:39+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+
+
+</urlset>

@@ -553,7 +553,7 @@ main{
     text-align: center;
   }
   .waves {
-    position: relative;
+    position: static;
     width: 100%;
     height: 15vh;
     margin-bottom: -7px;
@@ -674,53 +674,46 @@ footer{
     margin: 0px;
 }
 
-
-.btn-floating{
+.whatsapp img{
+    width: 6%;
+    margin-top: 7%;
     margin-left: 2%;
-    margin-top: 8%;
-    font-size: 170%;
     position: fixed;
-    text-align: left;
-    border: none;
-    border-radius: 24%;
-    background: green;
-
-   
 }
 
-.btn-floating:hover{
-    font-size: 190%;
-    border: none;
-    border-radius: 24%;
-    background: green;
+strong {
+    font-weight: normal;
+}
+h5 a{
+    color: white;
+
 }
 
-.fa-whatsapp:before{
-    color:white;
-    font-size: 200%
+h5 a:hover{
+    color: white;
+    font-size: xx-large;
 }
+
+h4 a{
+    color: white;
+
+}
+
+h4 a:hover{
+    color: white;
+
+}
+
 
 @media screen and (max-width:1024px){
-    .btn-floating{
-        margin-left: 2.5%;
+    ..whatsap img {
+        width: 2%;
         margin-top: 6%;
-        font-size: 100%;
-        position: fixed;
-        text-align: left;
-        border: none;
-        border-radius: 24%;
-        background: green;
-    
-       
+        margin-left: 2%;
     }
-    
-    .btn-floating:hover{
-        font-size: 110%;
-        border: none;
-        border-radius: 24%;
-        background: green;
-    }
+
 }
+
 
 
 @media screen and (max-width:900px){
@@ -728,24 +721,10 @@ footer{
         background-position: center;
     }
 
-    .btn-floating{
+    .whatsapp img {
+        width: 8%;
+        margin-top: 9%;
         margin-left: 3%;
-        margin-top: 8%;
-        font-size: 100%;
-        position: fixed;
-        text-align: left;
-        border: none;
-        border-radius: 24%;
-        background: green;
-    
-       
-    }
-    
-    .btn-floating:hover{
-        font-size: 110%;
-        border: none;
-        border-radius: 24%;
-        background: green;
     }
     
 
@@ -831,7 +810,17 @@ footer{
     }
 }
 
-@media screen and (max-width:500px){
+
+@media screen and (max-width:768px){
+    .whatsapp img {
+        width: 7%;
+        margin-top: 9%;
+        margin-left: 4%;
+    }
+    
+}
+
+@media screen and (max-width:540px){
     nav{
         text-align: center;
         padding: 30px 0 0 0;
@@ -852,24 +841,10 @@ footer{
 
     /* ABOUT US */
     
-    .btn-floating{
+    .whatsapp img {
+        width: 10%;
+        margin-top: 13%;
         margin-left: 6%;
-        margin-top: 15%;
-        font-size: 100%;
-        position: fixed;
-        text-align: left;
-        border: none;
-        border-radius: 24%;
-        background: green;
-    
-       
-    }
-    
-    .btn-floating:hover{
-        font-size: 110%;
-        border: none;
-        border-radius: 24%;
-        background: green;
     }
     
 
@@ -928,4 +903,22 @@ footer{
     .titulo-final{
         font-size: 20px;
     }
+}
+
+@media screen and (max-width:420px){
+    .whatsapp img {
+        width: 13%;
+        margin-top: 16%;
+        margin-left: 6%;
+    }
+    
+}
+
+@media screen and (max-width:360px){
+    .whatsapp img {
+        width: 16%;
+        margin-top: 19%;
+        margin-left: 8%;
+    }
+    
 }
